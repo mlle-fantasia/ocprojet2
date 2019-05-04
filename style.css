@@ -1,0 +1,107 @@
+/*
+Theme Name: Theme enfant
+Description: Theme enfant de Marina
+Author: Marina Front
+Author URI: https://www.marinafront.fr
+Template: oceanwp
+Version: 0.1.0
+*/
+@font-face { 
+	font-family: "myPolice";
+	src: url("http://ocprojet2-chaletsetcaviar/wp-content/themes/themeenfant/fonts/Existence-Light.ttf"); 
+}
+
+h1{
+	font-family:"myPolice";
+}
+.btn{
+	
+}
+
+.su-button-style-default{
+	padding: 0 25px;
+}
+.background-image-page-header{
+border-bottom: solid 10px black;
+}
+.minimal-header{
+	background: linear-gradient(#ffffff, #a8a8a9); 
+}
+/* .chaletsRecents li {
+	padding: 0;
+	margin: 0;
+	border-bottom: 0;
+	height: 600px;
+}*/
+#chaletsRecentsLouerDeux li , 
+#chaletsRecentsVendreDeux li {
+	flex-direction: row-reverse;
+}
+#chaletsRecentsLouerUn li , 
+#chaletsRecentsVendreUn li {
+	flex-direction: row;
+}
+#chaletsRecentsLouerUn li img, 
+#chaletsRecentsVendreUn li img {
+	margin: 0;
+	width: 100%;
+	height: 100%;
+}
+#chaletsRecentsLouerDeux li img, 
+#chaletsRecentsVendreDeux li img{
+	margin: 0;
+	width: 100%;
+	height: 100%;
+}
+#chaletsRecentsLouerDeux h3, #chaletsRecentsLouerDeux div, 
+#chaletsRecentsVendreDeux h3, #chaletsRecentsVendreDeux div {
+	margin-left: 0;
+/*	margin-right: 50%;*/
+
+}
+.flex-even {
+  flex: 1;
+}
+/*.chaletsRecents h3 {
+	font-size: 25px;
+	margin-left: 50%;
+    text-align: center;
+    padding-top: 200px;
+    background-color: gray;
+    height: 300px;
+    color: white;
+}
+.chaletsRecents div {
+    font-size: 15px;
+    padding: 20px 200px;
+    margin-left: 50%;
+    background-color: gray;
+    text-align: center;
+    height: 300px;
+    color: white;
+}
+*/
+.home section{
+	padding: 0;
+}
+.home h5 {
+	display: none;
+}
+/*@media screen and (max-width: 1024px) {
+	.chaletsRecents div {
+    padding: 20px 100px;
+	}
+}
+@media screen and (max-width: 768px) {
+	.chaletsRecents div, .elementor-171 .elementor-element.elementor-element-19dcaa1 > .elementor-widget-container { 
+    padding: 20px 50px;
+	}
+}
+@media screen and (max-width: 425px) {
+	.chaletsRecents div ,.elementor-171 .elementor-element.elementor-element-19dcaa1 > .elementor-widget-container {
+    padding: 20px 10px;
+	}
+}*/
+
+
+
