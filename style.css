@@ -8,100 +8,333 @@ Version: 0.1.0
 */
 @font-face { 
 	font-family: "myPolice";
-	src: url("http://ocprojet2-chaletsetcaviar/wp-content/themes/themeenfant/fonts/Existence-Light.ttf"); 
+	src: url("./assets/font/Existence-Light.ttf");
 }
 
-h1{
+h1, h2, h3, h4, h5{
 	font-family:"myPolice";
 }
-.btn{
-	
-}
-
-.su-button-style-default{
-	padding: 0 25px;
-}
-.background-image-page-header{
-border-bottom: solid 10px black;
-}
-.minimal-header{
-	background: linear-gradient(#ffffff, #a8a8a9); 
-}
-/* .chaletsRecents li {
-	padding: 0;
-	margin: 0;
-	border-bottom: 0;
-	height: 600px;
-}*/
-#chaletsRecentsLouerDeux li , 
-#chaletsRecentsVendreDeux li {
-	flex-direction: row-reverse;
-}
-#chaletsRecentsLouerUn li , 
-#chaletsRecentsVendreUn li {
-	flex-direction: row;
-}
-#chaletsRecentsLouerUn li img, 
-#chaletsRecentsVendreUn li img {
-	margin: 0;
-	width: 100%;
-	height: 100%;
-}
-#chaletsRecentsLouerDeux li img, 
-#chaletsRecentsVendreDeux li img{
-	margin: 0;
-	width: 100%;
-	height: 100%;
-}
-#chaletsRecentsLouerDeux h3, #chaletsRecentsLouerDeux div, 
-#chaletsRecentsVendreDeux h3, #chaletsRecentsVendreDeux div {
-	margin-left: 0;
-/*	margin-right: 50%;*/
-
-}
-.flex-even {
-  flex: 1;
-}
-/*.chaletsRecents h3 {
-	font-size: 25px;
-	margin-left: 50%;
-    text-align: center;
-    padding-top: 200px;
-    background-color: gray;
-    height: 300px;
-    color: white;
-}
-.chaletsRecents div {
-    font-size: 15px;
-    padding: 20px 200px;
-    margin-left: 50%;
-    background-color: gray;
-    text-align: center;
-    height: 300px;
-    color: white;
-}
-*/
 .home section{
 	padding: 0;
 }
+h2{
+	text-transform: uppercase;
+	font-size: 20px;
+}
+/***************** menu principal *******************/
+.dropdown-menu {
+	position: relative;
+	display: block;
+	float: none;
+}
+.home #site-header{
+	background-image: url("../../uploads/2019/05/montagneHeader.jg");
+	background-color: #ffffff00;
+	position: absolute;
+}
+#site-header{
+	 background-image: url("../../uploads/2019/05/montagneHeader.jpg");
+	 background-position: center;
+	 position: relative;
+	 height: 50px;
+ }
+
+#site-header a, #site-navigation-wrap .dropdown-menu > li > a{
+	color: white;
+}
+#site-header a:hover{
+	color: black;
+}
+
+#site-navigation-wrap .dropdown-menu > li > a {
+	line-height: 44px;
+}
+#site-logo #site-logo-inner {
+	height: auto;
+}
+.home #site-header {
+	border-color: #040404;
+}
+
+/***************** page d'accueil header *******************/
+/*titre et btn*/
+h1, .elementor-button-wrapper{
+	text-align: center;
+}
+/*element text plus btn (pour régler la hauteur de l'image)*/
+.elementor-171 .elementor-element.elementor-element-1m6w5cw:not(.elementor-motion-effects-element-type-background) > .elementor-element-populated,
+.elementor-171 .elementor-element.elementor-element-17204aa:not(.elementor-motion-effects-element-type-background) > .elementor-element-populated{
+	padding: 80px 0 ;
+}
+.home .elementor-row .elementor-element-1m6w5cw{
+	height: 50vh;
+}
+
+/***************** page d'accueil zone agence *******************/
+/*text descriptif agence*/
+.elementor-171 .elementor-element.elementor-element-19dcaa1 > .elementor-widget-container {
+	padding: 10px;
+}
+/*titre*/
+.elementor-171 .elementor-element.elementor-element-56hgk5i > .elementor-widget-container {
+	padding: 0px;
+}
+/*images additionel*/
+.elementor-widget-image .elementor-image img {
+	background-color: white;
+	width: 100%;
+}
+/*text descriptif agence*/
+.elementor-171 .elementor-element.elementor-element-19dcaa1 .elementor-text-editor {
+	font-size: 12px;
+}
+
+/***************** recents posts page d'accueil *******************/
+.flexRow2 , .flexRow1{
+	flex-direction: column;
+}
+.chaletsRecents li {
+	padding: 0;
+	margin: 0;
+	border-bottom: 0;
+}
+.flex-even {
+	flex: 1;
+}
+.rpwe-block li img {
+	margin: 0;
+	width: 100%;
+	height: 100%;
+}
 .home h5 {
+	display: block;
+	font-size: 25px;
+	text-align: center;
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+	border-bottom: solid 3px black;
+	width: 70%;
+}
+.rpwe-block h3 {
+	padding: 30px 0 20px 0;
+}
+.flexRow2 .infoPosts, .flexRow1 .img{
+	border-right: solid 5px black;
+}
+.flexRow1 .infoPosts, .flexRow2 .img{
+	border-left: solid 5px black;
+}
+.hr {
+	 width: 85%;
+	 border-bottom: solid 4px black;
+}
+.flexRow2 .hr{
+	margin-left: auto;
+}
+/***************** newsletter *******************/
+/*balise form*/
+#wpforms-form-294 {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	justify-content: center;
+	align-items: flex-end;
+}
+/*champs email*/
+#wpforms-294-field_1-container {
+	padding: 10px 10px 0 0;
+}
+/*btn envoyer*/
+div.wpforms-container-full .wpforms-form .wpforms-submit-container {
+	margin: auto;
+}
+
+/***************** slide page singular article *******************/
+.elementor-171 .elementor-element.elementor-element-c1dcc18 > .elementor-element-populated {
+	/*padding: 0;*/
+}
+
+
+
+/*.elementor-449 .elementor-element.elementor-element-c9ea8b6 > .elementor-element-populated {*/
+	/*padding: 0;*/
+/*}*/
+
+/*.su-button-style-default{*/
+	/*padding: 0 25px;*/
+/*}*/
+
+/*.minimal-header{*/
+	/*background-color: white;*/
+/*}*/
+
+
+
+
+
+/*#chaletsRecentsLouerDeux h3, #chaletsRecentsLouerDeux div,*/
+/*#chaletsRecentsVendreDeux h3, #chaletsRecentsVendreDeux div {*/
+	/*margin-left: 0;*/
+/*!*	margin-right: 50%;*!*/
+
+/*}*/
+
+
+
+/*************** pages *********************/
+.page-header{
+	display:none;
+}
+/*************** footer *********************/
+
+.site-footer {
 	display: none;
 }
-/*@media screen and (max-width: 1024px) {
-	.chaletsRecents div {
-    padding: 20px 100px;
+#menu-menu-footer li {
+	padding: 5px 0;
+}
+/* nous suivre titre*/
+#sfwa_footer .sfwa_row .sfwa_footer_area .widget-title{
+	font-size: 25px;
+}
+.sfwa_footer_area:nth-child(2) li a {
+	margin: 0 2px;
+}
+#menu-menu-footer{
+	list-style: none;
+}
+#menu-menu-footer a{
+	color: white;
+	font-size: 20px;
+	font-family:"myPolice";
+}
+.sfwa_row{
+	background-color:#202635;
+}
+#sfwa_footer .sfwa_row .sfwa_footer_area .widget-title{
+	color: white;
+}
+.sfwa_footer_area:nth-child(1){
+	border-right: solid 5px black;
+	text-align: center;
+	margin: 0;
+	padding: 30px;
+}
+.sfwa_footer_area:nth-child(2){
+	border-left: solid 5px black;
+	margin: 0;
+	text-align: center;
+	padding: 30px;
+
+}
+
+/*************** responsive *********************/
+@media screen and (min-width: 425px) {
+
+	/*************** header *********************/
+	.home .elementor-row .elementor-element-1m6w5cw, .home .elementor-row .elementor-element-17204aa{
+		height: 50vh;
+	}
+	/*************** recents posts page d'accueil *********************/
+	h5{
+		font-size: 30px;
+		text-align: center;
+		padding-bottom: 20px;
+		margin: 50px 0 20px;
+		border-bottom: solid 3px black;
+		width: 70%;
+	}
+
+	/*************** newsLetter *********************/
+	#wpforms-form-294 {
+		display: flex;
+		flex-direction: row;
+		text-align: left;
+		justify-content: center;
+		align-items: flex-end;
+	}
+	div.wpforms-container-full .wpforms-form .wpforms-submit-container {
+		margin: 0;
+	}
+	#wpforms-form-294 .wpforms-field-container{
+		width: 80%
 	}
 }
-@media screen and (max-width: 768px) {
-	.chaletsRecents div, .elementor-171 .elementor-element.elementor-element-19dcaa1 > .elementor-widget-container { 
-    padding: 20px 50px;
+@media screen and (min-width: 576px) {
+
+
+}
+@media screen and (min-width: 767px) {
+	/*************** recents posts page d'accueil *********************/
+	.flexRow2 {
+		flex-direction: row-reverse;
+	}
+	.flexRow1{
+		flex-direction: row;
+	}
+	/*************** header *********************/
+	.home .titre{
+		padding-top: 30vh;
+	}
+	.home .titre h1{
+		font-size:36px;
+	}
+	.home .elementor-row .elementor-element-1m6w5cw, .home .elementor-row .elementor-element-17204aa{
+		height: 100vh;
+	}
+	/*titre et btn*/
+	.elementor-element-17204aa h1, .elementor-element-17204aa .elementor-button-wrapper{
+		text-align: left;
+	}
+	/*titre et btn*/
+	.elementor-element-e5psqw1 h1, .elementor-element-c392c1d .elementor-button-wrapper{
+		text-align: right;
+	}
+	.home #imgAgence{
+		background-image: url("./assets/agence.jpg");
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+	.chaletsRecents .rpwe-summary{
+		/*padding: 20px 50px;*/
+	}
+	.home h5 {
+		display: none;
+	}
+	/*images additionel*/
+	.elementor-widget-image .elementor-image img {
+		display: block;
+	}
+	/*titre agence*/
+	.elementor-171 .elementor-element.elementor-element-56hgk5i > .elementor-widget-container {
+		padding-top: 20px;
+	}
+	/*text descriptif agence*/
+	.elementor-171 .elementor-element.elementor-element-19dcaa1 > .elementor-widget-container {
+		padding: 0 30px;
+		min-height: 200px;
+	}
+	/************* footer ***************/
+	#menu-menu-footer li {
+		padding: 0;
+	}
+	/* nous suivre titre*/
+	#sfwa_footer .sfwa_row .sfwa_footer_area .widget-title{
+		margin-bottom: 15px;
 	}
 }
-@media screen and (max-width: 425px) {
-	.chaletsRecents div ,.elementor-171 .elementor-element.elementor-element-19dcaa1 > .elementor-widget-container {
-    padding: 20px 10px;
+@media screen and (min-width: 1024px) {
+	.chaletsRecents .rpwe-summary{
+		padding: 20px 100px;
 	}
-}*/
+	/*text descriptif agence*/
+	.elementor-171 .elementor-element.elementor-element-19dcaa1 > .elementor-widget-container {
+		padding: 0 100px;
+		min-height: 300px;
+
+	}
+}
+
 
 
 
