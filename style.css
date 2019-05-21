@@ -6,12 +6,20 @@ Author URI: https://www.marinafront.fr
 Template: oceanwp
 Version: 0.1.0
 */
+
+/*********************************************************/
+/*********************** Template ************************/
+/*********************************************************/
+
+
+/********************** Générale *************************/
+/*********************************************************/
 @font-face { 
 	font-family: "myPolice";
 	src: url("./assets/font/Existence-Light.ttf");
 }
-
-h1, h2, h3, h4, h5{
+/*pas de h5*/
+h1, h2, h3, h4{
 	font-family:"myPolice";
 }
 .home section{
@@ -21,22 +29,22 @@ h2{
 	text-transform: uppercase;
 	font-size: 20px;
 }
-/***************** menu principal *******************/
+.page-header{
+	display:none;
+}
+/******************** menu principal *********************/
+/*********************************************************/
+#site-logo-inner{
+	font-family:"myPolice";
+}
 .dropdown-menu {
 	position: relative;
 	display: block;
 	float: none;
 }
-.home #site-header{
-	background-image: url("../../uploads/2019/05/montagneHeader.jg");
-	background-color: #ffffff00;
-	position: absolute;
-}
 #site-header{
-	 background-image: url("../../uploads/2019/05/montagneHeader.jpg");
-	 background-position: center;
-	 position: relative;
-	 height: 50px;
+	background-color: #202635;
+	height: 75px;
  }
 
 #site-header a, #site-navigation-wrap .dropdown-menu > li > a{
@@ -55,138 +63,11 @@ h2{
 .home #site-header {
 	border-color: #040404;
 }
-
-/***************** page d'accueil header *******************/
-/*titre et btn*/
-h1, .elementor-button-wrapper{
-	text-align: center;
+.menu-item-gtranslate{
+	margin-top: 11px;
 }
-/*element text plus btn (pour régler la hauteur de l'image)*/
-.elementor-171 .elementor-element.elementor-element-1m6w5cw:not(.elementor-motion-effects-element-type-background) > .elementor-element-populated,
-.elementor-171 .elementor-element.elementor-element-17204aa:not(.elementor-motion-effects-element-type-background) > .elementor-element-populated{
-	padding: 80px 0 ;
-}
-.home .elementor-row .elementor-element-1m6w5cw{
-	height: 50vh;
-}
-
-/***************** page d'accueil zone agence *******************/
-/*text descriptif agence*/
-.elementor-171 .elementor-element.elementor-element-19dcaa1 > .elementor-widget-container {
-	padding: 10px;
-}
-/*titre*/
-.elementor-171 .elementor-element.elementor-element-56hgk5i > .elementor-widget-container {
-	padding: 0px;
-}
-/*images additionel*/
-.elementor-widget-image .elementor-image img {
-	background-color: white;
-	width: 100%;
-}
-/*text descriptif agence*/
-.elementor-171 .elementor-element.elementor-element-19dcaa1 .elementor-text-editor {
-	font-size: 12px;
-}
-
-/***************** recents posts page d'accueil *******************/
-.flexRow2 , .flexRow1{
-	flex-direction: column;
-}
-.chaletsRecents li {
-	padding: 0;
-	margin: 0;
-	border-bottom: 0;
-}
-.flex-even {
-	flex: 1;
-}
-.rpwe-block li img {
-	margin: 0;
-	width: 100%;
-	height: 100%;
-}
-.home h5 {
-	display: block;
-	font-size: 25px;
-	text-align: center;
-	padding-bottom: 20px;
-	margin-bottom: 20px;
-	border-bottom: solid 3px black;
-	width: 70%;
-}
-.rpwe-block h3 {
-	padding: 30px 0 20px 0;
-}
-.flexRow2 .infoPosts, .flexRow1 .img{
-	border-right: solid 5px black;
-}
-.flexRow1 .infoPosts, .flexRow2 .img{
-	border-left: solid 5px black;
-}
-.hr {
-	 width: 85%;
-	 border-bottom: solid 4px black;
-}
-.flexRow2 .hr{
-	margin-left: auto;
-}
-/***************** newsletter *******************/
-/*balise form*/
-#wpforms-form-294 {
-	display: flex;
-	flex-direction: column;
-	text-align: center;
-	justify-content: center;
-	align-items: flex-end;
-}
-/*champs email*/
-#wpforms-294-field_1-container {
-	padding: 10px 10px 0 0;
-}
-/*btn envoyer*/
-div.wpforms-container-full .wpforms-form .wpforms-submit-container {
-	margin: auto;
-}
-
-/***************** slide page singular article *******************/
-.elementor-171 .elementor-element.elementor-element-c1dcc18 > .elementor-element-populated {
-	/*padding: 0;*/
-}
-
-
-
-/*.elementor-449 .elementor-element.elementor-element-c9ea8b6 > .elementor-element-populated {*/
-	/*padding: 0;*/
-/*}*/
-
-/*.su-button-style-default{*/
-	/*padding: 0 25px;*/
-/*}*/
-
-/*.minimal-header{*/
-	/*background-color: white;*/
-/*}*/
-
-
-
-
-
-/*#chaletsRecentsLouerDeux h3, #chaletsRecentsLouerDeux div,*/
-/*#chaletsRecentsVendreDeux h3, #chaletsRecentsVendreDeux div {*/
-	/*margin-left: 0;*/
-/*!*	margin-right: 50%;*!*/
-
-/*}*/
-
-
-
-/*************** pages *********************/
-.page-header{
-	display:none;
-}
-/*************** footer *********************/
-
+/************************ footer *************************/
+/*********************************************************/
 .site-footer {
 	display: none;
 }
@@ -225,24 +106,105 @@ div.wpforms-container-full .wpforms-form .wpforms-submit-container {
 	margin: 0;
 	text-align: center;
 	padding: 30px;
-
 }
 
-/*************** responsive *********************/
+/*********************************************************/
+/******************** page d'accueil *********************/
+/*********************************************************/
+
+/************************* header ************************/
+/*********************************************************/
+/*titre et btn*/
+h1, .elementor-button-wrapper{
+	text-align: center;
+}
+/*element text plus btn (pour régler la hauteur de l'image)*/
+.elementor-171 .elementor-element.elementor-element-1m6w5cw:not(.elementor-motion-effects-element-type-background) > .elementor-element-populated,
+.elementor-171 .elementor-element.elementor-element-17204aa:not(.elementor-motion-effects-element-type-background) > .elementor-element-populated{
+	padding: 80px 0 ;
+}
+.home .elementor-row .elementor-element-1m6w5cw{
+	height: 50vh;
+}
+
+/*********************** zone agence *********************/
+/*********************************************************/
+/*text descriptif agence*/
+.elementor-171 .elementor-element.elementor-element-19dcaa1 > .elementor-widget-container {
+	padding: 10px;
+}
+/*text descriptif agence*/
+.elementor-171 .elementor-element.elementor-element-19dcaa1 .elementor-text-editor {
+	font-size: 12px;
+}
+/*titre*/
+.elementor-171 .elementor-element.elementor-element-56hgk5i > .elementor-widget-container {
+	padding: 0px;
+}
+/*images additionel*/
+.elementor-widget-image .elementor-image img {
+	background-color: white;
+	width: 100%;
+}
+
+/******************* recents posts ***********************/
+/*********************************************************/
+.rpwe-title{
+	background-image:url("./assets/etoiles.png");
+}
+/***************** newsletter *******************/
+/*********************************************************/
+/*balise form*/
+#wpforms-form-294 {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	justify-content: center;
+	align-items: flex-end;
+}
+/*champs email*/
+#wpforms-294-field_1-container {
+	padding: 10px 10px 0 0;
+}
+/*btn envoyer*/
+div.wpforms-container-full .wpforms-form .wpforms-submit-container {
+	margin: auto;
+}
+/*********************************************************/
+/***************** pages chalets ******************/
+/*********************************************************/
+
+/***************** header ******************/
+/*********************************************************/
+/*texte*/
+.elementor-574 .elementor-element.elementor-element-0cfe79f > .elementor-widget-container {
+	padding: 0px;
+}
+/*image*/
+.elementor-element-517c4f1 .elementor-element-75e5e52{
+	display: none;
+}
+/*tt le header*/
+.elementor-section .elementor-container {
+	display: block;
+}
+/*********************************************************/
+/***************** slide page singular article *******************/
+/*********************************************************/
+
+
+
+/*********************************************************/
+/*********************************************************/
+/********************  Responsive  ***********************/
+/*********************************************************/
+/*********************************************************/
+
 @media screen and (min-width: 425px) {
 
 	/*************** header *********************/
 	.home .elementor-row .elementor-element-1m6w5cw, .home .elementor-row .elementor-element-17204aa{
 		height: 50vh;
-	}
-	/*************** recents posts page d'accueil *********************/
-	h5{
-		font-size: 30px;
-		text-align: center;
-		padding-bottom: 20px;
-		margin: 50px 0 20px;
-		border-bottom: solid 3px black;
-		width: 70%;
 	}
 
 	/*************** newsLetter *********************/
@@ -260,18 +222,7 @@ div.wpforms-container-full .wpforms-form .wpforms-submit-container {
 		width: 80%
 	}
 }
-@media screen and (min-width: 576px) {
-
-
-}
 @media screen and (min-width: 767px) {
-	/*************** recents posts page d'accueil *********************/
-	.flexRow2 {
-		flex-direction: row-reverse;
-	}
-	.flexRow1{
-		flex-direction: row;
-	}
 	/*************** header *********************/
 	.home .titre{
 		padding-top: 30vh;
@@ -298,9 +249,7 @@ div.wpforms-container-full .wpforms-form .wpforms-submit-container {
 	.chaletsRecents .rpwe-summary{
 		/*padding: 20px 50px;*/
 	}
-	.home h5 {
-		display: none;
-	}
+
 	/*images additionel*/
 	.elementor-widget-image .elementor-image img {
 		display: block;
@@ -314,6 +263,16 @@ div.wpforms-container-full .wpforms-form .wpforms-submit-container {
 		padding: 0 30px;
 		min-height: 200px;
 	}
+	/***************** page chalets header  ******************/
+	/*texte*/
+	.elementor-574 .elementor-element.elementor-element-0cfe79f > .elementor-widget-container {
+		padding: 0 30px;
+		min-height: 200px;
+	}
+	/*image*/
+	.elementor-element-517c4f1 .elementor-element-75e5e52{
+		display: block;
+	}
 	/************* footer ***************/
 	#menu-menu-footer li {
 		padding: 0;
@@ -321,6 +280,11 @@ div.wpforms-container-full .wpforms-form .wpforms-submit-container {
 	/* nous suivre titre*/
 	#sfwa_footer .sfwa_row .sfwa_footer_area .widget-title{
 		margin-bottom: 15px;
+	}
+}
+@media screen and (min-width: 960px) {
+	#site-header{
+		height: 50px;
 	}
 }
 @media screen and (min-width: 1024px) {
@@ -331,7 +295,10 @@ div.wpforms-container-full .wpforms-form .wpforms-submit-container {
 	.elementor-171 .elementor-element.elementor-element-19dcaa1 > .elementor-widget-container {
 		padding: 0 100px;
 		min-height: 300px;
-
+	}
+	/*text descriptif header page chalets*/
+	.elementor-574 .elementor-element.elementor-element-0cfe79f > .elementor-widget-container {
+		padding: 0 100px;
 	}
 }
 
