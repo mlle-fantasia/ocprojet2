@@ -22,8 +22,8 @@ Version: 0.1.0
 h1, h2, h3, h4{
 	font-family:"myPolice";
 }
-.home section{
-	padding: 0;
+section {
+	padding: 0!important;
 }
 h2{
 	text-transform: uppercase;
@@ -36,6 +36,9 @@ h2{
 /*********************************************************/
 #site-logo-inner{
 	font-family:"myPolice";
+}
+#site-header a, #site-navigation-wrap .dropdown-menu > li > a:active{
+	color: gray;
 }
 .dropdown-menu {
 	position: relative;
@@ -50,10 +53,12 @@ h2{
 #site-header a, #site-navigation-wrap .dropdown-menu > li > a{
 	color: white;
 }
-#site-header a:hover{
-	color: black;
+#site-navigation-wrap .dropdown-menu > li > a span:hover {
+	color: gray;
 }
-
+#site-navigation-wrap .dropdown-menu > li > a:active {
+	color: #6f83a9;
+}
 #site-navigation-wrap .dropdown-menu > li > a {
 	line-height: 44px;
 }
@@ -65,6 +70,20 @@ h2{
 }
 .menu-item-gtranslate{
 	margin-top: 11px;
+}
+.current-menu-item > a > span{
+	color: #6979a0;
+}
+
+/**************** menu principal mobile ******************/
+/*********************************************************/
+#sidr .sidr-class-menu-item:active{
+	background-color:#35435d ;
+	color: white;
+}
+a.sidr-class-toggle-sidr-close{
+	background-color: #202635 ;
+	color: white;
 }
 /************************ footer *************************/
 /*********************************************************/
@@ -121,7 +140,7 @@ h1, .elementor-button-wrapper{
 /*element text plus btn (pour régler la hauteur de l'image)*/
 .elementor-171 .elementor-element.elementor-element-1m6w5cw:not(.elementor-motion-effects-element-type-background) > .elementor-element-populated,
 .elementor-171 .elementor-element.elementor-element-17204aa:not(.elementor-motion-effects-element-type-background) > .elementor-element-populated{
-	padding: 80px 0 ;
+	padding: 0 ;
 }
 .home .elementor-row .elementor-element-1m6w5cw{
 	height: 50vh;
@@ -146,6 +165,9 @@ h1, .elementor-button-wrapper{
 	background-color: white;
 	width: 100%;
 }
+.elementor-171 .elementor-element.elementor-element-19dcaa1 > .elementor-widget-container p {
+	font-size: 15px;
+}
 
 /******************* recents posts ***********************/
 /*********************************************************/
@@ -166,10 +188,23 @@ h1, .elementor-button-wrapper{
 #wpforms-294-field_1-container {
 	padding: 10px 10px 0 0;
 }
+/*champs email*/
+.wpforms-field-container{
+	width: 100% !important;
+}
 /*btn envoyer*/
 div.wpforms-container-full .wpforms-form .wpforms-submit-container {
 	margin: auto;
 }
+/*le form*/
+.elementor-171 .elementor-element.elementor-element-c1dcc18 > .elementor-element-populated{
+	padding: 0;
+}
+/*le form*/
+.elementor-element-00a04f5{
+	margin:auto;
+}
+
 /*********************************************************/
 /***************** pages chalets ******************/
 /*********************************************************/
@@ -188,10 +223,21 @@ div.wpforms-container-full .wpforms-form .wpforms-submit-container {
 .elementor-section .elementor-container {
 	display: block;
 }
+.elementor-element .elementor-element-populated .elementor-widget-wrap .elementor-widget-shortcode{
+	margin: 0;
+}
+.container{
+	padding: 0;
+}
+#main > #content-wrap {
+	padding-top: 0;
+}
 /*********************************************************/
-/***************** slide page singular article *******************/
+/***************** page singular article *******************/
 /*********************************************************/
-
+.elementor-widget:not(:last-child){
+	margin-bottom: 0;
+}
 
 
 /*********************************************************/
@@ -224,22 +270,35 @@ div.wpforms-container-full .wpforms-form .wpforms-submit-container {
 }
 @media screen and (min-width: 767px) {
 	/*************** header *********************/
+	.home .elementor-element-049de66 .elementor-widget-wrap{
+		padding: 20px 0 20px 0;
+		margin-left: 500px;
+		background-color: #202635b3;
+	}
+	.home .elementor-element-5a723bf h1{
+		text-align: right;
+	}
+	.home .elementor-element-7f4354a > .elementor-widget-container > h1{
+		text-align: left;
+	}
 	.home .titre{
-		padding-top: 30vh;
+		/*padding-top: 30vh;*/
 	}
 	.home .titre h1{
-		font-size:36px;
+		font-size:30px;
 	}
 	.home .elementor-row .elementor-element-1m6w5cw, .home .elementor-row .elementor-element-17204aa{
 		height: 100vh;
 	}
-	/*titre et btn*/
-	.elementor-element-17204aa h1, .elementor-element-17204aa .elementor-button-wrapper{
+	/* btn*/
+	.home .elementor-element-3951ced .elementor-button-wrapper{
 		text-align: left;
+		padding-left: 20px;
 	}
-	/*titre et btn*/
-	.elementor-element-e5psqw1 h1, .elementor-element-c392c1d .elementor-button-wrapper{
+	/* btn*/
+	.home .elementor-element-1f09051 .elementor-button-wrapper{
 		text-align: right;
+		padding-right: 20px;
 	}
 	.home #imgAgence{
 		background-image: url("./assets/agence.jpg");
@@ -261,7 +320,6 @@ div.wpforms-container-full .wpforms-form .wpforms-submit-container {
 	/*text descriptif agence*/
 	.elementor-171 .elementor-element.elementor-element-19dcaa1 > .elementor-widget-container {
 		padding: 0 30px;
-		min-height: 200px;
 	}
 	/***************** page chalets header  ******************/
 	/*texte*/
@@ -294,11 +352,13 @@ div.wpforms-container-full .wpforms-form .wpforms-submit-container {
 	/*text descriptif agence*/
 	.elementor-171 .elementor-element.elementor-element-19dcaa1 > .elementor-widget-container {
 		padding: 0 100px;
-		min-height: 300px;
+		min-height: 200px;
 	}
 	/*text descriptif header page chalets*/
-	.elementor-574 .elementor-element.elementor-element-0cfe79f > .elementor-widget-container {
+	.elementor-574 .elementor-element.elementor-element-2b58b85 > .elementor-widget-container,
+	.elementor-549 .elementor-element.elementor-element-16ef521 > .elementor-widget-container{
 		padding: 0 100px;
+		min-height: 200px;
 	}
 }
 
