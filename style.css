@@ -29,6 +29,9 @@ h2{
 	text-transform: uppercase;
 	font-size: 20px;
 }
+.elementor-column-wrap .elementor-widget-heading >.elementor-widget-container > h1{
+	margin: 30px 0 20px 0;
+}
 .page-header{
 	display:none;
 }
@@ -53,7 +56,7 @@ h2{
 #site-header a, #site-navigation-wrap .dropdown-menu > li > a{
 	color: white;
 }
-#site-navigation-wrap .dropdown-menu > li > a span:hover {
+body #site-navigation-wrap .dropdown-menu > li > a:hover{
 	color: gray;
 }
 #site-navigation-wrap .dropdown-menu > li > a:active {
@@ -142,8 +145,11 @@ h1, .elementor-button-wrapper{
 .elementor-171 .elementor-element.elementor-element-17204aa:not(.elementor-motion-effects-element-type-background) > .elementor-element-populated{
 	padding: 0 ;
 }
-.home .elementor-row .elementor-element-1m6w5cw{
-	height: 50vh;
+.home .elementor-row > .elementor-element-1m6w5cw{
+	height: 45vh;
+}
+.home .elementor-row > .elementor-element-17204aa{
+	height: 45vh;
 }
 
 /*********************** zone agence *********************/
@@ -158,7 +164,7 @@ h1, .elementor-button-wrapper{
 }
 /*titre*/
 .elementor-171 .elementor-element.elementor-element-56hgk5i > .elementor-widget-container {
-	padding: 0px;
+	padding: 0;
 }
 /*images additionel*/
 .elementor-widget-image .elementor-image img {
@@ -204,6 +210,9 @@ div.wpforms-container-full .wpforms-form .wpforms-submit-container {
 .elementor-element-00a04f5{
 	margin:auto;
 }
+#respond{
+	padding: 0 10px;
+}
 
 /*********************************************************/
 /***************** pages chalets ******************/
@@ -238,7 +247,12 @@ div.wpforms-container-full .wpforms-form .wpforms-submit-container {
 .elementor-widget:not(:last-child){
 	margin-bottom: 0;
 }
-
+/* texte header*/
+.elementor-top-section:nth-child(1)  .elementor-column-wrap > .elementor-widget-wrap > .elementor-element > .elementor-widget-container > .elementor-text-editor{
+	font-size: 12px;
+	width: 100%;
+	margin: auto;
+}
 
 /*********************************************************/
 /*********************************************************/
@@ -269,35 +283,52 @@ div.wpforms-container-full .wpforms-form .wpforms-submit-container {
 	}
 }
 @media screen and (min-width: 767px) {
-	/*************** header *********************/
-	.home .elementor-element-049de66 .elementor-widget-wrap{
-		padding: 20px 0 20px 0;
-		margin-left: 500px;
-		background-color: #202635b3;
+	/*************** template *********************/
+	/*************** footer *********************/
+	#menu-menu-footer a{
+		font-size: 17px;
 	}
-	.home .elementor-element-5a723bf h1{
+	/* nous suivre titre*/
+	#sfwa_footer .sfwa_row .sfwa_footer_area .widget-title{
+		font-size: 20px;
+	}
+	#menu-menu-footer li {
+		padding: 0;
+	}
+	/* nous suivre titre*/
+	#sfwa_footer .sfwa_row .sfwa_footer_area .widget-title{
+		margin-bottom: 15px;
+	}
+	/*************** home *********************/
+	/*************** header *********************/
+	/*tt le header*/
+	.home .elementor-row .elementor-element-1m6w5cw, .home .elementor-row .elementor-element-17204aa{
+		height: 100vh;
+	}
+	/*titre*/
+	.home .elementor-171 .elementor-element.elementor-element-c392c1d,
+	.home .elementor-171 .elementor-element.elementor-element-d4a682c{
+		margin-top: 30vh;
+	}
+	/*titre + btn*/
+	.home .elementor-171 .elementor-element.elementor-element-c392c1d h1,
+	.home .elementor-171 .elementor-element.elementor-element-c392c1d .elementor-button-wrapper{
 		text-align: right;
 	}
-	.home .elementor-element-7f4354a > .elementor-widget-container > h1{
+	/*titre + btn */
+	.home .elementor-171 .elementor-element.elementor-element-d4a682c h1,
+	.home .elementor-171 .elementor-element.elementor-element-d4a682c .elementor-button-wrapper{
 		text-align: left;
-	}
-	.home .titre{
-		/*padding-top: 30vh;*/
 	}
 	.home .titre h1{
 		font-size:30px;
 	}
-	.home .elementor-row .elementor-element-1m6w5cw, .home .elementor-row .elementor-element-17204aa{
-		height: 100vh;
-	}
 	/* btn*/
-	.home .elementor-element-3951ced .elementor-button-wrapper{
-		text-align: left;
+	.home .elementor-171 .elementor-element.elementor-element-d4a682c .elementor-button-wrapper{
 		padding-left: 20px;
 	}
 	/* btn*/
-	.home .elementor-element-1f09051 .elementor-button-wrapper{
-		text-align: right;
+	.home .elementor-171 .elementor-element.elementor-element-c392c1d .elementor-button-wrapper{
 		padding-right: 20px;
 	}
 	.home #imgAgence{
@@ -305,10 +336,8 @@ div.wpforms-container-full .wpforms-form .wpforms-submit-container {
 		background-size: cover;
 		background-repeat: no-repeat;
 	}
-	.chaletsRecents .rpwe-summary{
-		/*padding: 20px 50px;*/
-	}
 
+	/***************** agence  ******************/
 	/*images additionel*/
 	.elementor-widget-image .elementor-image img {
 		display: block;
@@ -331,14 +360,10 @@ div.wpforms-container-full .wpforms-form .wpforms-submit-container {
 	.elementor-element-517c4f1 .elementor-element-75e5e52{
 		display: block;
 	}
-	/************* footer ***************/
-	#menu-menu-footer li {
-		padding: 0;
+	.elementor-top-section:nth-child(1) .elementor-column-wrap > .elementor-widget-wrap > .elementor-element > .elementor-widget-container > .elementor-text-editor{
+		width: 80%;
 	}
-	/* nous suivre titre*/
-	#sfwa_footer .sfwa_row .sfwa_footer_area .widget-title{
-		margin-bottom: 15px;
-	}
+
 }
 @media screen and (min-width: 960px) {
 	#site-header{
@@ -351,14 +376,19 @@ div.wpforms-container-full .wpforms-form .wpforms-submit-container {
 	}
 	/*text descriptif agence*/
 	.elementor-171 .elementor-element.elementor-element-19dcaa1 > .elementor-widget-container {
-		padding: 0 100px;
+		padding: 20px 100px;
 		min-height: 200px;
 	}
 	/*text descriptif header page chalets*/
 	.elementor-574 .elementor-element.elementor-element-2b58b85 > .elementor-widget-container,
 	.elementor-549 .elementor-element.elementor-element-16ef521 > .elementor-widget-container{
-		padding: 0 100px;
+		padding: 20px 100px;
 		min-height: 200px;
+	}
+	/*text descriptif header page singular*/
+	.elementor-top-section:nth-child(1) .elementor-column-wrap > .elementor-widget-wrap > .elementor-element > .elementor-widget-container > .elementor-text-editor{
+		width: 70%;
+		font-size: 15px;
 	}
 }
 
