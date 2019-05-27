@@ -25,9 +25,12 @@ h1, h2, h3, h4{
 section {
 	padding: 0!important;
 }
-h2{
+.h2 h2{
 	text-transform: uppercase;
-	font-size: 20px;
+	font-size: 30px;
+}
+.h2{
+	padding-bottom: 20px;
 }
 .elementor-column-wrap .elementor-widget-heading >.elementor-widget-container > h1{
 	margin: 30px 0 20px 0;
@@ -136,6 +139,7 @@ a.sidr-class-toggle-sidr-close{
 
 /************************* header ************************/
 /*********************************************************/
+
 /*titre et btn*/
 h1, .elementor-button-wrapper{
 	text-align: center;
@@ -151,7 +155,11 @@ h1, .elementor-button-wrapper{
 .home .elementor-row > .elementor-element-17204aa{
 	height: 45vh;
 }
-
+/*btns container*/
+.home #titreRight .elementor-widget-container,
+.home #titreLeft .elementor-widget-container{
+	padding: 0 0 30px 0;
+}
 /*********************** zone agence *********************/
 /*********************************************************/
 /*text descriptif agence*/
@@ -159,7 +167,7 @@ h1, .elementor-button-wrapper{
 	padding: 10px;
 }
 /*text descriptif agence*/
-.elementor-171 .elementor-element.elementor-element-19dcaa1 .elementor-text-editor {
+.texteAgence p{
 	font-size: 12px;
 }
 /*titre*/
@@ -284,6 +292,10 @@ div.wpforms-container-full .wpforms-form .wpforms-submit-container {
 }
 @media screen and (min-width: 767px) {
 	/*************** template *********************/
+	.h2 h2{
+		font-size: 40px;
+	}
+
 	/*************** footer *********************/
 	#menu-menu-footer a{
 		font-size: 17px;
@@ -301,43 +313,45 @@ div.wpforms-container-full .wpforms-form .wpforms-submit-container {
 	}
 	/*************** home *********************/
 	/*************** header *********************/
+	h1{
+		letter-spacing: 0.2rem;
+	}
 	/*tt le header*/
-	.home .elementor-row .elementor-element-1m6w5cw, .home .elementor-row .elementor-element-17204aa{
+	.home #homeHeader .imgHeader{
 		height: 100vh;
 	}
 	/*titre*/
-	.home .elementor-171 .elementor-element.elementor-element-c392c1d,
-	.home .elementor-171 .elementor-element.elementor-element-d4a682c{
+	.home .elementor-171 #titreLeft,
+	.home .elementor-171 #titreRight{
 		margin-top: 30vh;
 	}
 	/*titre + btn*/
-	.home .elementor-171 .elementor-element.elementor-element-c392c1d h1,
-	.home .elementor-171 .elementor-element.elementor-element-c392c1d .elementor-button-wrapper{
+	.home .elementor-171 #titreLeft h1,
+	.home .elementor-171 #titreLeft .elementor-button-wrapper{
 		text-align: right;
 	}
 	/*titre + btn */
-	.home .elementor-171 .elementor-element.elementor-element-d4a682c h1,
-	.home .elementor-171 .elementor-element.elementor-element-d4a682c .elementor-button-wrapper{
+	.home #titreRight h1,
+	.home #titreRight .elementor-button-wrapper{
 		text-align: left;
 	}
 	.home .titre h1{
 		font-size:30px;
 	}
 	/* btn*/
-	.home .elementor-171 .elementor-element.elementor-element-d4a682c .elementor-button-wrapper{
+	.home #titreRight .elementor-button-wrapper{
 		padding-left: 20px;
 	}
 	/* btn*/
-	.home .elementor-171 .elementor-element.elementor-element-c392c1d .elementor-button-wrapper{
+	.home #titreLeft .elementor-button-wrapper{
 		padding-right: 20px;
 	}
+	/***************** agence  ******************/
 	.home #imgAgence{
 		background-image: url("./assets/agence.jpg");
 		background-size: cover;
 		background-repeat: no-repeat;
 	}
-
-	/***************** agence  ******************/
 	/*images additionel*/
 	.elementor-widget-image .elementor-image img {
 		display: block;
@@ -349,6 +363,10 @@ div.wpforms-container-full .wpforms-form .wpforms-submit-container {
 	/*text descriptif agence*/
 	.elementor-171 .elementor-element.elementor-element-19dcaa1 > .elementor-widget-container {
 		padding: 0 30px;
+	}
+	/*text descriptif agence*/
+	.texteAgence p{
+		line-height: 32px;
 	}
 	/***************** page chalets header  ******************/
 	/*texte*/
@@ -368,6 +386,9 @@ div.wpforms-container-full .wpforms-form .wpforms-submit-container {
 @media screen and (min-width: 960px) {
 	#site-header{
 		height: 50px;
+	}
+	h1{
+		letter-spacing: 0.5rem;
 	}
 }
 @media screen and (min-width: 1024px) {
