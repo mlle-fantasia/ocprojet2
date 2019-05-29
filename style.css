@@ -60,10 +60,7 @@ section {
 	color: white;
 }
 body #site-navigation-wrap .dropdown-menu > li > a:hover{
-	color: gray;
-}
-#site-navigation-wrap .dropdown-menu > li > a:active {
-	color: #6f83a9;
+	color: #4b5f72;
 }
 #site-navigation-wrap .dropdown-menu > li > a {
 	line-height: 44px;
@@ -78,7 +75,7 @@ body #site-navigation-wrap .dropdown-menu > li > a:hover{
 	margin-top: 11px;
 }
 .current-menu-item > a > span{
-	color: #6979a0;
+	color: #778490;
 }
 
 /**************** menu principal mobile ******************/
@@ -132,6 +129,13 @@ a.sidr-class-toggle-sidr-close{
 	text-align: center;
 	padding: 30px;
 }
+/****************** articles similaires ******************/
+/*********************************************************/
+.oceanwp-row > .related-post{
+	flex: inherit;
+	max-width: inherit;
+}
+
 
 /*********************************************************/
 /******************** page d'accueil *********************/
@@ -169,6 +173,8 @@ h1, .elementor-button-wrapper{
 /*text descriptif agence*/
 .texteAgence p{
 	font-size: 12px;
+	text-align: justify;
+	margin-bottom: 20px;
 }
 /*titre*/
 .elementor-171 .elementor-element.elementor-element-56hgk5i > .elementor-widget-container {
@@ -185,9 +191,9 @@ h1, .elementor-button-wrapper{
 
 /******************* recents posts ***********************/
 /*********************************************************/
-.rpwe-title{
-	background-image:url("./assets/etoiles.png");
-}
+/*.rpwe-title{*/
+	/*background-image:url("./assets/etoiles.png");*/
+/*}*/
 /***************** newsletter *******************/
 /*********************************************************/
 /*balise form*/
@@ -311,6 +317,11 @@ div.wpforms-container-full .wpforms-form .wpforms-submit-container {
 	#sfwa_footer .sfwa_row .sfwa_footer_area .widget-title{
 		margin-bottom: 15px;
 	}
+	/*************** articles similaires *********************/
+	.oceanwp-row > .related-post img{
+		max-height: 200px;
+		min-height: 200px;
+	}
 	/*************** home *********************/
 	/*************** header *********************/
 	h1{
@@ -356,24 +367,25 @@ div.wpforms-container-full .wpforms-form .wpforms-submit-container {
 	.elementor-widget-image .elementor-image img {
 		display: block;
 	}
-	/*titre agence*/
-	.elementor-171 .elementor-element.elementor-element-56hgk5i > .elementor-widget-container {
-		padding-top: 20px;
-	}
-	/*text descriptif agence*/
-	.elementor-171 .elementor-element.elementor-element-19dcaa1 > .elementor-widget-container {
-		padding: 0 30px;
-	}
+	/*!*titre agence*!*/
+	/*.elementor-171 .elementor-element.elementor-element-56hgk5i > .elementor-widget-container {*/
+		/*padding-top: 20px;*/
+	/*}*/
+	/*!*text descriptif agence*!*/
+	/*.elementor-171 .elementor-element.elementor-element-19dcaa1 > .elementor-widget-container {*/
+		/*!*padding: 0 30px;*!*/
+	/*}*/
 	/*text descriptif agence*/
 	.texteAgence p{
-		line-height: 32px;
+		font-size: 15px;
 	}
 	/***************** page chalets header  ******************/
-	/*texte*/
-	.elementor-574 .elementor-element.elementor-element-0cfe79f > .elementor-widget-container {
-		padding: 0 30px;
-		min-height: 200px;
-	}
+	/*!*texte*!*/
+	/*.elementor-574 .elementor-element.elementor-element-0cfe79f > .elementor-widget-container {*/
+		/*padding: 0 30px;*/
+		/*line-height: 32px;*/
+	/*}*/
+
 	/*image*/
 	.elementor-element-517c4f1 .elementor-element-75e5e52{
 		display: block;
@@ -400,19 +412,22 @@ div.wpforms-container-full .wpforms-form .wpforms-submit-container {
 		padding: 20px 100px;
 		min-height: 200px;
 	}
-	/*text descriptif header page chalets*/
-	.elementor-574 .elementor-element.elementor-element-2b58b85 > .elementor-widget-container,
-	.elementor-549 .elementor-element.elementor-element-16ef521 > .elementor-widget-container{
-		padding: 20px 100px;
-		min-height: 200px;
-	}
+
 	/*text descriptif header page singular*/
 	.elementor-top-section:nth-child(1) .elementor-column-wrap > .elementor-widget-wrap > .elementor-element > .elementor-widget-container > .elementor-text-editor{
 		width: 70%;
 		font-size: 15px;
 	}
+	/*text descriptif agence*/
+	.texteAgence p{
+		line-height: 32px;
+	}
+	/*************** articles similaires *********************/
+	.oceanwp-row > .related-post img{
+		max-height: 240px;
+		min-height: 240px;
+	}
 }
-
 
 
 
